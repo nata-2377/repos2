@@ -3,23 +3,56 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Icon="./Resources/icon.ico"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="ООО 'Детский мир'" Height="450" Width="800">
     
     <Grid>
-        <Grid.RowDefinitions> 
-        <RowDefinition> </RowDefinition>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"> </RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition> </RowDefinition>
+            <RowDefinition Height="0.5*"> </RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Background="#A5E887" Orientation="Horizontal" 
+                    Margin="0,0,-0.4,0" Grid.ColumnSpan="2" >
+            <TextBlock Text="ООО 'ДЕТСКИЙ МИР'" FontSize="25" FontFamily="Candara" HorizontalAlignment="Center">
+            </TextBlock>
+        </StackPanel>
+        <Grid Grid.Row="0" Background="#A5E887" >
+            <Image Source="Resources/logo.png" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
+        <Grid Grid.Row="5" Background="#B3F4E9" Grid.ColumnSpan="3">
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="2" >
+            <Button x:Name="btnExit" Content="Выход" Background="#A5E887" FontFamily="Tahoma"  Width="150" Height="30" />
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1"  >
+            <Label Content="Авторизация" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontFamily="Candara"> </Label> 
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="0"  >
+            <Label Content="Логин" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="25" FontFamily="Candara"></Label>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="0"  >
+            <Label Content="Пароль" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="25" FontFamily="Candara"></Label>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1" >
+            <Button x:Name="btnGuest" Content="Войти как гость" Background="#A5E887" FontFamily="Tahoma"  Width="200" Height="30" />
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1" >
+            <TextBox x:Name="tbLog" Width="200" Height="30"> </TextBox>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1" >
+            <TextBox x:Name="tbPass" Width="200" Height="30"></TextBox>
+        </Grid>
+
     </Grid>
 </Window>
