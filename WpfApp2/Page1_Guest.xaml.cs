@@ -12,20 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfApp2;
 
 namespace WpfApp2
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Page1_Guest.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Page1_Guest : Page
     {
-        public MainWindow()
+        public Page1_Guest()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Page1_Guest());
-
         }
     }
 }
