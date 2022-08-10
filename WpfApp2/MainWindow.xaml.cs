@@ -24,8 +24,18 @@ namespace WpfApp2
         public MainWindow()
         {
             InitializeComponent();
+            
+            Manager.MainFrame = MainFrame;
+            
             MainFrame.Navigate(new Page1_Guest());
-
         }
+
+        private void btnGuest_Click(object sender, RoutedEventArgs e)
+        {
+
+            Manager.MainFrame.Navigate(new Page1_Guest());
+        }
+
+        
     }
 }

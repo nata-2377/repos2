@@ -48,7 +48,7 @@
             <Button x:Name="btnPerson" Content="Войти" Background="#A5E887" FontFamily="Tahoma"  Width="200" Height="30" />
         </Grid>
         <Grid Grid.Row="4" Grid.Column="2" >
-            <Button x:Name="btnGuest" Content="Войти как гость" Background="#B3F4E9" FontFamily="Tahoma"  Width="200" Height="30" />
+            <Button x:Name="btnGuest" Content="Войти как гость" Background="#B3F4E9" FontFamily="Tahoma"  Width="200" Height="30" Click="btnGuest_Click" />
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1" >
             <TextBox x:Name="tbLog" Width="200" Height="30"> </TextBox>
@@ -56,6 +56,7 @@
         <Grid Grid.Row="3" Grid.Column="1" >
             <TextBox x:Name="tbPass" Width="200" Height="30"></TextBox>
         </Grid>
-        <Frame Name="MainFrame" Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="0" Grid.RowSpan="4"> </Frame>
+        <Frame  Grid.Row="1" Grid.RowSpan="4" Name="MainFrame">
+            </Frame>
     </Grid>
 </Window>

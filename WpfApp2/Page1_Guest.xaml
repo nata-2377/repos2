@@ -5,11 +5,11 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfApp2"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="80" d:DesignWidth="80"
       Title="Page1_Guest">
 
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Height="30" Margin="572,363,0,0" VerticalAlignment="Top" Width="71"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="30"  VerticalAlignment="Top" Width="71"/>
 
     </Grid>
 </Page>
